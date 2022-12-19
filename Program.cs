@@ -19,7 +19,7 @@ var destinationOption = new Option<string>(
 };
 var extractCustomActionsCommand = new Command("custom-actions") { sourceArgument, destinationOption };
 var extractCommand = new Command("extract") { extractCustomActionsCommand };
-var rootCommand = new RootCommand("AIP Reader") { extractCommand };
+var rootCommand = new RootCommand("AIP CLI") { extractCommand };
 
 extractCustomActionsCommand.SetHandler(
     (sourceValue, destinationValue) =>
