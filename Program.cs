@@ -50,13 +50,13 @@ extractCustomActionsCommand.SetHandler(
                         var name = nameNode?.Attributes?["Action"]?.Value;
                         if (name == null) { continue; }
 
-                        byte[] targetData = Convert.FromBase64String(base64Target);
+                        var targetData = Convert.FromBase64String(base64Target);
                         var value = Encoding.BigEndianUnicode.GetString(targetData);
 
-                        string scriptHeader = "Script\u0002";
+                        var scriptHeader = "Script\u0002";
                         var scriptText = value.Substring(value.LastIndexOf(scriptHeader) + scriptHeader.Length);
 
-                        string escapePattern = @"\[\\(.{1})\]";
+                        var escapePattern = @"\[\\(.{1})\]";
                         var unescapedScript = Regex.Replace(scriptText, escapePattern, "$1");
 
                         var destinationPath = Path.Combine(destinationValue, name + ".ps1");
