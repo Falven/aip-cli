@@ -1,6 +1,8 @@
 # aip-cli
 
-A CLI utility to perform various tasks around Advanced Installer Project files.
+Currently AIP files house code in an encoded format within installer project files which makes it impossible to monitor such code through source control. This can lead to QOL issues.
+
+aip-cli is a .NET 7 CLI utility that perform various tasks around Advanced Installer Project files that attempt to aleviate some of these issues.
 
 ## Syntax
 
@@ -15,6 +17,10 @@ The following is an overview into the technical details of how this utility curr
 ### AIP Format
 
 AIP files are UTF-8 encoded XML structured files.
+
+### CLI Options
+
+The utility currently uses Dotnet 7 features along with the `System.CommandLine` library and Dornet XML parsing utilities to extract information from an AIP installer file.
 
 ### Custom Actions
 
