@@ -10,7 +10,9 @@ Will extract all custom-action scripts from the project file into separate power
 
 ## How it works
 
-### AIP
+The following is an overview into the technical details of how this utility currently works.
+
+### AIP Format
 
 AIP files are UTF-8 encoded XML structured files.
 
