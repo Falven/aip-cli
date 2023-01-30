@@ -61,3 +61,4 @@ As mentioned above:
 - Inferring and respecting custom-action execution order.
 - Extracting custom action metadata such as execution options and dialog stage condition.
 - Importing custom action scripts into an installer file.
+    - Biggest roadblock is figuring out all possible characters that need to be escaped for imported scripts.
