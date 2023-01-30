@@ -20,7 +20,7 @@ AIP files are UTF-8 encoded XML structured files.
 
 ### CLI Options
 
-The utility currently uses Dotnet 7 features along with the `System.CommandLine` library and Dornet XML parsing utilities to extract information from an AIP installer file.
+The utility currently uses Dotnet 7 features along with the `System.CommandLine` library and Dotnet XML parsing utilities to extract information from an AIP installer file.
 
 ### Custom Actions
 
