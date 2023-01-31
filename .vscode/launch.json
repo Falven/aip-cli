@@ -17,7 +17,7 @@
         "--source",
         "C:\\source\\repos\\connectivitymodule\\conminstaller\\Zeiss - Connectivity Module.aip",
         "--destination",
-        "."
+        "./scripts/powershell"
       ],
       "cwd": "${workspaceFolder}",
       // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
