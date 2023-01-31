@@ -20,7 +20,7 @@ AIP files are UTF-8 encoded XML structured files.
 
 ### CLI Options
 
-The utility currently uses Dotnet 7 features along with the `System.CommandLine` library and Dornet XML parsing utilities to extract information from an AIP installer file.
+The utility currently uses Dotnet 7 features along with the `System.CommandLine` library and Dotnet XML parsing utilities to extract information from an AIP installer file.
 
 ### Custom Actions
 
@@ -61,3 +61,4 @@ As mentioned above:
 - Inferring and respecting custom-action execution order.
 - Extracting custom action metadata such as execution options and dialog stage condition.
 - Importing custom action scripts into an installer file.
+    - Biggest roadblock is figuring out all possible characters that need to be escaped for imported scripts.
